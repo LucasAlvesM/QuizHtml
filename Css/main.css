@@ -1,0 +1,66 @@
+:root{
+    --fonte:'Yusei Magic';
+    --roxo-azul:#05122D;
+    --russianViolet:#261342;
+    --roxo:#2E145D;
+    --SpaceCadet:#1C1854;
+}
+*{
+ font-family: var(--fonte);
+ padding: 0px;
+ margin: 0%;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+   
+}
+body{
+    background: url(/img/thumb-1920-714812.png);
+}
+h1{
+    color: #05122D ;
+}
+.container{
+    
+    width: auto;
+    height: 100vh;
+}
+
+.botao{
+  width: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.btn{
+    border-style: none;
+    border-radius: 4px;
+    background: #05122D;
+    color: aliceblue;
+    text-decoration: none;
+    width: 250px;
+    height: 70px;
+    margin-top: 0.2rem;
+    font-size: 1.8rem;
+
+}
+/* .btn a{
+    list-style: none;
+    text-decoration: none;
+
+} */
+
+
+.btn:hover{
+    background: whitesmoke;
+    color: #05122D;
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 #2E145D;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}

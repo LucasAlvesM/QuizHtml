@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/jogo.css">
+    <link rel="stylesheet" href="./fontes/font.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="nav">
+        <p> Ranking</p>
+        <a href="index.html"> Jogar De Novo</a>
+        <button class="btn2" onclick="novoRecord()">Salvar</button>
+        
+         <p class="pontos">
+            Pontuação:<span id="record"></span>
+            <input id="pontuacaoAtual" type="text">
+            Record:<span id="score"></span>
+        </p>
+
+        </div>
+    <div class= "container">
+        
+        <div id="deck">
+          
+    
+            <div id="card-1" class="perguntas">
+                <h2>De onde são os personagens?</h2>
+                <br>
+                <img class="img" src="/img/60679.jpg" alt="#">
+                <br>
+                <input type="radio" name="resp-1-alt1" id="quest-1_alternativa-1"><label>A)Shokugeki no Soma</label>
+                <input type="radio" name="resp-1-alt1" id="quest-1_alternativa-2"><label>B)Sword Art Online</label>
+                <input type="radio" name="resp-1-alt1" id="quest-1_alternativa-3"><label>C)Naruto</label>
+                <input type="radio" name="resp-1-alt1" id="quest-1_alternativa-4"><label>D)Jujutso Kaisen</label>
+                <button onclick="pergunta1()"type="button" class="btn">Verificar</button>
+                <span id="span1" class="span"></span>
+            </div>
+            <div id="card-2" class="perguntas">
+                <h2>De qual anime é a imagem?</h2>
+                <br>
+                <img class="img" src="/img/419530.jpg" alt="#">
+                <br>
+                <input type="radio" name="resp-1-alt2" id="quest-2_alternativa-1"><label>A)Dragon Ball Z</label>
+                <input type="radio" name="resp-1-alt2" id="quest-2_alternativa-2"><label>B)Atack on Titan</label>
+                <input type="radio" name="resp-1-alt2" id="quest-2_alternativa-3"><label>C)Boruto</label>
+                <input type="radio" name="resp-1-alt2" id="quest-2_alternativa-4"><label>D)Spice And Wolf</label>
+                <button onclick="pergunta2()"type="button" class="btn">Verificar</button>
+                <span id="span2" class="span"></span>
+            </div>
+            <div id="card-3" class="perguntas">
+                <h2>Este Grupo é...?</h2>
+                <br>
+                <img class="img" src="/img/60682.jpg" alt="#">
+                <br>
+                <input type="radio" name="resp-1-alt3" id="quest-3_alternativa-1"><label>A)Grupo 10</label>
+                <input type="radio" name="resp-1-alt3" id="quest-3_alternativa-2"><label>B)Os Melhores</label>
+                <input type="radio" name="resp-1-alt3" id="quest-3_alternativa-3"><label>C)Elite dos 10</label>
+                <input type="radio" name="resp-1-alt3" id="quest-3_alternativa-4"><label>D)A Elite</label>
+                <button onclick="pergunta3()"type="button" class="btn">Verificar</button>
+                <span id="span3" class="span"></span>
+            </div>
+             <div id="card-4" class="perguntas">
+                <h2>Em Food Wars Estes são?</h2>
+                <br>
+                <img class="img" src="/img/60685.jpg" alt="#">
+                <br>
+                <input type="radio" name="resp-1-alt4" id="quest-4_alternativa-1"><label >A)Equipe soma</label>
+                <input type="radio" name="resp-1-alt4" id="quest-4_alternativa-2"><label>B)Nova Elite dos 10</label>
+                <input type="radio" name="resp-1-alt4" id="quest-4_alternativa-3"><label >C)Amigos do Soma</label>
+                <input type="radio" name="resp-1-alt4" id="quest-4_alternativa-4"><label >D)Moradores do dormitorio KyoKusei</label>
+                <button onclick="pergunta4()"type="button" class="btn">Verificar</button>
+                <span id="span4" class="span"></span>
+            </div>
+            <div id="card-5" class="perguntas">
+                <h2>Erina Nakiri e Soma Yukihira são?</h2>
+                <br>
+                <img class="img" src="/img/60738.jpg" alt="#">
+                <br>
+                <input type="radio" name="resp-1-alt5" id="quest-5_alternativa-1"><label >A)Rivais</label>
+                <input type="radio" name="resp-1-alt5" id="quest-5_alternativa-2"><label>B)Amigos</label>
+                <input type="radio" name="resp-1-alt5" id="quest-5_alternativa-3"><label >C)Irmaos</label>
+                <input type="radio" name="resp-1-alt5" id="quest-5_alternativa-4"><label >D)Não se conhecem</label>
+                <button onclick="pergunta5()"type="button" class="btn">Verificar</button>
+                <span id="span5" class="span"></span>
+            </div>
+            <div id="card-6" class="perguntas">
+                <h2>O sonho de Soma Yukihira é</h2>
+                <br>
+                <img class="img" src="/img/60815.jpg" alt="#">
+                <br>
+                <input type="radio" name="resp-1-alt6" id="quest-6_alternativa-1"><label >A)Desafiar seus amigos</label>
+                <input type="radio" name="resp-1-alt6" id="quest-6_alternativa-2"><label>B)Se tornar melhor que o Pai</label>
+                <input type="radio" name="resp-1-alt6" id="quest-6_alternativa-3"><label >C)Ser o numero 1</label>
+                <input type="radio" name="resp-1-alt6" id="quest-6_alternativa-4"><label >D)Ter o Proprio restaurante </label>
+                <button onclick="pergunta6()"type="button" class="btn">Verificar</button>
+                <span id="span6" class="span"></span>
+            </div>
+            <div id="card-7" class="perguntas">
+                <h2>Nakiri Erina é conhecida como...</h2>
+                <br>
+                <img class="img" src="/img/Anime-Wallpaper-Desktop-Background-73.jpg" alt="#">
+                <br>
+                <input type="radio" name="resp-1-alt7" id="quest-7_alternativa-1"><label >A)A melhor chef</label>
+                <input type="radio" name="resp-1-alt7" id="quest-7_alternativa-2"><label>B)Cadeira 3 na Elite dos 10</label>
+                <input type="radio" name="resp-1-alt7" id="quest-7_alternativa-3"><label >C)Lingua de Deus</label>
+                <input type="radio" name="resp-1-alt7" id="quest-7_alternativa-4"><label >D)Diretora da Academia Totsuki</label>
+                <button onclick="pergunta7()"type="button" class="btn">Verificar</button>
+                <span id="span7" class="span"></span>
+            </div>
+            <div id="card-8" class="perguntas">
+                <h2>Esta imagem pertence à?</h2>
+                <br>
+                <img class="img" src="/img/atack on titan.jpg" alt="#">
+                <br>
+                <input type="radio" name="resp-1-alt8" id="quest-8_alternativa-1"><label >A)Kill la Kill</label>
+                <input type="radio" name="resp-1-alt8" id="quest-8_alternativa-2"><label>B)Sword Art Online</label>
+                <input type="radio" name="resp-1-alt8" id="quest-8_alternativa-3"><label >C)Dorohedoro</label>
+                <input type="radio" name="resp-1-alt8" id="quest-8_alternativa-4"><label >D)Atack on Titan</label>
+                <button onclick="pergunta8()"type="button" class="btn">Verificar</button>
+                <span id="span8" class="span"></span>
+            </div>
+            <div id="card-9" class="perguntas">
+                <h2>Este Personagem se chama...?</h2>
+                <br>
+                <img class="img" src="/img/676297.png" alt="#">
+                <br>
+                <input type="radio" name="resp-1-alt9" id="quest-9_alternativa-1"><label >A)Nakiri Alice</label>
+                <input type="radio" name="resp-1-alt9" id="quest-9_alternativa-2"><label>B)Megume</label>
+                <input type="radio" name="resp-1-alt9" id="quest-9_alternativa-3"><label >C)Kobayashi, Rindou</label>
+                <input type="radio" name="resp-1-alt9" id="quest-9_alternativa-4"><label >D)Nakiri Erina</label>
+                <button onclick="pergunta9()"type="button" class="btn">Verificar</button>
+                <span id="span9" class="span"></span>
+            </div>
+            <div id="card-10" class="perguntas">
+                <h2>Qual personagen tem uma Mazzaluna</h2>
+                <br>
+                <img class="img" src="/img/688168.png" alt="#">
+                <br>
+                <input type="radio" name="resp-1-alt10" id="quest-10_alternativa-1"><label >A)Ryo Kurokiba</label>
+                <input type="radio" name="resp-1-alt10" id="quest-10_alternativa-2"><label>B)Takuma Aldini</label>
+                <input type="radio" name="resp-1-alt10" id="quest-10_alternativa-3"><label >C)Boruto</label>
+                <input type="radio" name="resp-1-alt10" id="quest-10_alternativa-4"><label >D)Akira</label>
+                <button onclick="pergunta10()"type="button" class="btn">Verificar</button>
+                <span id="span10" class="span"></span>
+            </div>
+            <div id="card-11" class="perguntas">
+                <h2>O Shokugeki é?</h2>
+                <br>
+                <img class="img" src="/img/wp1898450.png" alt="#">
+                <br>
+                <input type="radio" name="resp-1-alt11" id="quest-11_alternativa-1"><label>A)Um desafio</label>
+                <input type="radio" name="resp-1-alt11" id="quest-11_alternativa-2"><label>B)Uma batalha</label>
+                <input type="radio" name="resp-1-alt11" id="quest-11_alternativa-3"><label>C)Uma Brincadeira</label>
+                <input type="radio" name="resp-1-alt11" id="quest-11_alternativa-4"><label>D)Uma Personagem</label>
+                <button onclick="pergunta11()"type="button" class="btn">Verificar</button>
+                <span id="span11" class="span"></span>
+            </div>
+            <div id="card-12" class="perguntas">
+                <h2>Tsukasa Eishi é conhecido como?</h2>
+                <br>
+                <img class="img" src="/img/Screenshot_2017-11-04-13-11-19.png" alt="#">
+                <br>
+                <input type="radio" name="resp-1-alt12" id="quest-12_alternativa-1"><label >A)Cavaleiro Branco</label>
+                <input type="radio" name="resp-1-alt12" id="quest-12_alternativa-2"><label>B)Cadeira - 1 </label>
+                <input type="radio" name="resp-1-alt12" id="quest-12_alternativa-3"><label >C)Rival de Soma Yukihira</label>
+                <input type="radio" name="resp-1-alt12" id="quest-12_alternativa-4"><label >D)Louco</label>
+                <button onclick="pergunta12()"type="button" class="btn">Verificar</button>
+                <span id="span12" class="span"></span>
+            </div> 
+        </div>
+    </div>
+    
+    <script src="/Js/jogo.js"></script>
+    <script src="/Js/ranking.js"></script>
+</body>
+</html>
