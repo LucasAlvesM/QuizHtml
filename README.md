@@ -8,3 +8,5 @@ tema do jogo é o Anime Shokugeki no Soma...
 4.Não é permitido responder a mesma pergunta mais de uma vez!!!                                                                                                             
 5.E claro não vale consultar o Google para facilitar em!                                                                                     
 6.Boa sorte e bom Jogo!!!
+
+[![Manual](./manual%20do%20jogo.png "Shokugeki no Soma,Quiz")]()
